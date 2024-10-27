@@ -1,0 +1,17 @@
+numpy- library to work with arrays
+matplotlib- data visualization
+PIL- Python Image Library for image analysis
+
+https://numpy.org/devdocs/reference/routines.fft.html
+
+Fourier analysis is fundamentally a method for expressing a function as a sum of periodic components, and for recovering the function from those components.
+When both the function and its Fourier transform are replaced with discretized counterparts, it is called the discrete Fourier transform (DFT).
+The DFT has become a mainstay of numerical computing in part because of a very fast algorithm for computing it, called the Fast Fourier Transform (FFT).
+
+numpy.fft- for DFT
+fft(a[, n, axis, norm, out])- Compute the one-dimensional discrete Fourier Transform.
+ifft(a[, n, axis, norm, out])-Compute the one-dimensional inverse discrete Fourier Transform.
+fft2(a[, s, axes, norm, out])- Compute the 2-dimensional discrete Fourier Transform.
+ifft2(a[, s, axes, norm, out])-Compute the 2-dimensional inverse discrete Fourier Transform.
+fftn(a[, s, axes, norm, out])- Compute the N-dimensional discrete Fourier Transform.
+ifftn(a[, s, axes, norm, out])- Compute the N-dimensional inverse discrete Fourier Transform.
