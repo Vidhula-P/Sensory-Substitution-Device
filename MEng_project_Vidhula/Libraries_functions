@@ -1,6 +1,7 @@
 numpy- library to work with arrays
 matplotlib- data visualization
 PIL- Python Image Library for image analysis
+CV- Computer Vision
 
 https://numpy.org/devdocs/reference/routines.fft.html
 
@@ -15,3 +16,15 @@ fft2(a[, s, axes, norm, out])- Compute the 2-dimensional discrete Fourier Transf
 ifft2(a[, s, axes, norm, out])-Compute the 2-dimensional inverse discrete Fourier Transform.
 fftn(a[, s, axes, norm, out])- Compute the N-dimensional discrete Fourier Transform.
 ifftn(a[, s, axes, norm, out])- Compute the N-dimensional inverse discrete Fourier Transform.
+
+CV used for contour detection
+https://learnopencv.com/contour-detection-using-opencv-python-c/
+1. cv2.THRESH_BINARY:
+- Pixels above the threshold are set to the maximum value (e.g., 255 for an 8-bit grayscale image).
+- Pixels below the threshold are set to 0.
+- This results in a binary image where bright areas are white, and dark areas are black.
+
+2. cv2.THRESH_BINARY_INV: --> we need this for contouring through CV
+- Pixels above the threshold are set to 0.
+- Pixels below the threshold are set to the maximum value (255).
+- This inverts the binary result, so bright areas turn black, and dark areas turn white.
