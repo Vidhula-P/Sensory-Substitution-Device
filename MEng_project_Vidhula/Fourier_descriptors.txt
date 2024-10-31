@@ -1,0 +1,11 @@
+References
+1. [https://dsp.stackexchange.com/questions/29187/how-do-i-understand-fourier-descriptors-more-visually-and-intuitively]
+2. [https://www.slideshare.net/slideshow/fourier-descriptors-moments/241776896#2]
+
+
+- Fourier descriptors represent the boundary shape of an object using the coefficients of its Fourier transform.
+- FD are essentially the application of the Fourier Transform to decompose the form of the curve into a sum of shapes that look roughly like circles whose radius has been modulated.
+- They are invariant to scaling, translation, and rotation
+- The equivalent of the zero frequency component (or DC) is a perfect circle with a radius equal to the average distance to the centroid of the curve.
+-   * The way to "input" the curve to the Fourier Transform is by taking its x,y points to form a complex number (e.g. z=x⋅i+y)
+    * After this, you apply the Fourier Transform on that set of complex numbers (i.e. a series of zk where k∈ [0..N−1] and N being the total       number of x,y points that the curve is composed of.
